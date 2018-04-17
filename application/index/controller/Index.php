@@ -12,8 +12,8 @@ class Index
     {
         return 'hello everyone!' . $name;
     }
-    public function test(){
-        $request = Request::instance();
+    public function test(Request $request){
+//        $request = Request::instance();
         dump($request);
     }
 }
