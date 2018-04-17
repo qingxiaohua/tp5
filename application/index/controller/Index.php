@@ -1,6 +1,6 @@
 <?php
 namespace app\index\controller;
-
+use think\Request;
 class Index
 {
     public function index()
@@ -11,5 +11,9 @@ class Index
     public function hello($name = 'This is ThinkPHP 5')
     {
         return 'hello everyone!' . $name;
+    }
+    public function test(){
+        $request = Request::instance();
+        dump($request);
     }
 }
