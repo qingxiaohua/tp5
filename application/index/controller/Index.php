@@ -1,6 +1,7 @@
 <?php
 namespace app\index\controller;
 use think\Request;
+use think\Db;
 class Index
 {
     public function index()
@@ -15,5 +16,10 @@ class Index
     public function test(Request $request){
 //        $request = Request::instance();
         dump($request);
+    }
+    public function db(){
+//        insert into
+        $requst =   Db::execute('inseet into test (name,status) values ("大华",1)');
+        dump($requst);
     }
 }
