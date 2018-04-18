@@ -19,7 +19,7 @@ class Index
     }
     public function db(){
 //        insert into
-        $requst =   Db::execute('inseet into test (name,status) values ("大华",1)');
+        $requst =   Db::execute('INSERT  into test (name,status) values ("大华",1)');
         dump($requst);
     }
 }
