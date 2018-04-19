@@ -19,7 +19,37 @@ class Index
     }
     public function db(){
 //        insert into
-        $requst =   Db::execute('INSERT  into test (name,status) values ("大华",1)');
+//        $requst =   Db::execute('INSERT  into test (name,status) values ("大华",1)');
+//        $requst =   Db::execute('update test set NAME ="测试" WHERE  id = 2 ');
+//        Db::execute('delete from  test  WHERE  id =2 ');
+//        Db::table('think')->insert(['name'=>'测试2','status'=>1]);
+//        Db::table('think')->where('id',1)->update(['name'=>'测试3','status'=>0]);
+//        Db::table('think')->where('id',1)->select();
+//        Db::table('think')->where('id',1)->delete();
+
+//        助手函数 每次会链接数据库，少用。
+//        $db =   db('test');
+//        $db->insert(['name'=>'测试5','status'=>1]);
+//        $db->where('id',1)->update(['name'=>'测试6']);
+//        $db->where('id',1)->delete();
+//        $db->where('id',1)->select();
+
+//        $list = Db::name('test')->where('status',1)->field('name','status')->order('id','desc')->limit(3)->select();
+//        Db::name('test')->where('status',1)->find();
+//        Db::name('test')->where('status',1)->select();
+//        Db::name('test')->where('name','like','%测%')->select();
+//        Db::table('test')->where('id','between',[2,5])->select();
+//        Db::table('test')->insertAll([['name'=>'测试11','status'=>1],['name'=>'测试22','status'=>1],['name'=>'测试33','status'=>1]]);
+
+//        某些字段 便捷操作
+
+//        Db::table('test')->where('id',1)->setField('name','哈哈');
+//        Db::table('name')->where('id',1)->setInc('status');
+//        Db::table('name')->where('id',1)->setInc('status',5);
+//        Db::table('name')->where('id',1)->setDec('status');
+//        Db::table('name')->where('id',1)->setDec('status',3);
+
+        $requst = Db::query("select * from test  ");
         dump($requst);
     }
 }
