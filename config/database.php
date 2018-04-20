@@ -19,7 +19,7 @@ return [
     // 用户名
     'username'        => 'root',
     // 密码
-    'password'        => 'love@|I*U&@#_-567',
+    'password'        => '你的数据库密码',
     // 端口
     'hostport'        => '',
     // 连接dsn
