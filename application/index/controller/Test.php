@@ -9,7 +9,7 @@ namespace app\index\controller;
 use app\index\model\Test as TestModel;
 use think\Controller;
 
-class Test{
+class Test extends \think\Controller{
     public function index(){
 //        模板变量赋值
         $name ="Thinkphp";
