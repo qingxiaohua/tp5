@@ -19,7 +19,7 @@ class Test extends \think\Controller{
 
     }
     public function page(){
-        
+
     }
     public function add(){
 
