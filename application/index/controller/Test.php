@@ -18,6 +18,9 @@ class Test extends \think\Controller{
         return $this->fetch();
 
     }
+    public function page(){
+        
+    }
     public function add(){
 
 //        $test = new TestModel();
